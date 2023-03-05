@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calories-Calculator</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="container">
+      
+      <h1 class=" input display-4 text-center mt-4">My<span class="text-primary">Calories</span>Calculator</h1>
+      
+      <form id = "input-form">
+
+        <div class="row mb-3">
+          
+          <div class="mx-auto col-10 col-md-8 col-lg-6">
+            <label for="age" class="col-sm-2 col-form-label">Age</label>
+            <input type="number" min="15" max="80" class="form-control" id="age">
+          </div>
+        </div>
+        <fieldset class="row mb-3">
+          <div class="mx-auto col-10 col-md-8 col-lg-6">
+            <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gender" id="male" value="male" checked>
+              <label class="form-check-label" for="male">
+                Male
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+              <label class="form-check-label" for="female">
+               Female
+              </label>
+            </div>
+        </fieldset>
+        <div class="row mb-3">
+          
+          <div class="mx-auto col-10 col-md-8 col-lg-6">
+            <label for="height" class="col-sm-2 col-form-label">Height</label>
+            <input type="number" min="150" max="220" class="form-control" id="height" placeholder="cm">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="mx-auto col-10 col-md-8 col-lg-6">
+            <label for="weight" class="col-sm-2 col-form-label">Weight</label>
+
+            <input type="number" min="50" max="150" class="form-control" id="weight" placeholder="kg">
+          </div>
+        </div>
+
+        <div class="row mb-3">
+
+          
+          <div class="mx-auto col-10 col-md-8 col-lg-6">
+
+            <label for="activity" class="col-sm-2 col-form-label">Activity</label>
+
+            <select class="form-select">
+              <option value="a">Little or no exercise</option>
+              <option value="b">Exercise 1-3 times/week</option>
+              <option value="c">Exercise 4-5 times/week</option>
+              <option value="d">Exercise 6-7 times/week</option>
+            </select>
+            
+          </div>
+
+        </div>
+       
+<div class="text-center">
+  <button type="submit" class="btn btn-primary">Calculate</button>
+</div>
+
+
+</form>
+
+<div class="text-center mt-4">
+
+  <div id = "results" ></div>
+
+</div>
+
+</div>
+
+        
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+    </div>
+
+<script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script> 
+</body>
+</html>
+
+
+
+<!--<div class="form-group">
+          <label for="age">Age</label>
+          <input type="text" id="age" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label for="male">Male</label>
+          <input type="radio" id="male" name="gender" class="form-check-input">
+        </div>
+
+        <div class="form-group">
+          <label for="female">Female</label>
+          <input type="radio" id="female" name="gender" class="form-check-input">
+        </div>
+
+        <div class="form-group">
+          <label for="height">Height in cm</label>
+          <input type="number" min ="150" max="230" id="height" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label for="weight">Weight in kilos</label>
+          <input type="number" min ="50" max="200" id="weight" class="form-control">
+        </div> -->
